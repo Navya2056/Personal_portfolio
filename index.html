@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ce05e447de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>I'm <span>Navya JS</span><br> From Banglore,India</h1>
+            </div>
+        </div>
+    </div>
+<!-- -----------about------------- --->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated and methodical individual. I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I have an active and dynamic approach to work and getting things done. I am determined and decisive. I identify and develop opportunities.
+                         </p>
+
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Full stack web development</span><br>Full stack websites.</li>
+                                <li><span>Web Development</span><br>Web App Development.</li>
+                                <li><span>Android Development</span><br>Building ios/Android Apps.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2020-2024</span><br>As a CSE student in SEA College of Engineering and Technology.</li>
+                                <li><span>July 2023-August 2023</span><br>As an FSWD intern for an month at Certify Company.</li>
+                                <li><span>june 2023-August 2023</span><br>As an App development intern for 2 months at B2World Company.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2020-2024</span><br>BE,CSE Engineer in SEA College Of Engineering and Technology,KR Puram,Banglore.</li>
+                                <li><span>2018-2020</span><br>PCMB student in Alvas Pre-University College,Moodbidiri,Manglore.</li>
+                                <li><span>2007-2018</span><br>Pre-School,Mid-School,High-School in The Preethi Public School,Chinthamani,Chikkballapura.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------services--------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FullStack Web Development </h2>
+                    <p>Designed snokker club and temperature convertor website for the Certify Company.</p>
+                    <a href="https://github.com/Navya2056?tab=repositories" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Development </h2>
+                    <p>Designed an online pet shop management website in College as a mini project.</p>
+                    <a href="https://github.com/Navya2056/Onlinepetshopmanagement_system" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Mobile Application Development </h2>
+                    <p>Developed calculator and quiz app.</p>
+                    <a href="https://github.com/Navya2056?tab=repositories" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------portfolio----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Fullstack web development</h3>
+                        <p>Designed and created various websites like snooker club and temperature conversion using fullstack.</p>
+                        <a href="https://github.com/Navya2056?tab=repositories" target="_blank" class="fa-solid fa-up-right-from-square"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Online petshop management</h3>
+                        <p>The database management system which stores all purchase details and details abot the pets.</p>
+                        <a href="https://github.com/Navya2056/Onlinepetshopmanagement_system" target="_blank"  class="fa-solid fa-up-right-from-square"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Mobile Applications</h3>
+                        <p>Applications like calculator and quiz using xml and java.</p>
+                        <a href="https://github.com/Navya2056?tab=repositories" target="_blank" class="fa-solid fa-up-right-from-square"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!------------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> jsnavya2052@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> +91 8123532109</p>
+                
+                <div class="social-icons">
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/Navya2056" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/navya_js_?igshid=MzMyNGUyNmU2YQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/navya-js-45b5a1264" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Navya-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <input type="Message" rows="6" placeholder="Your Message" required>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Navya. <i class="fa-solid fa-heart"></i> Made by portifolio</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbypTdyUlCWWgNbP4FyVEfy4mXgUt0ac1yAaLNshlu38Q6xVTiXMknASBPWisnTmFy-lOA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
